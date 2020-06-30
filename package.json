@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/Audibene-GMBH/ta.testing-stuff#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "eslint-plugin-typescript": "^0.14.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "typescript": "^3.9.5"
   }
 }

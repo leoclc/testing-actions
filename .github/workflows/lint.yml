@@ -1,13 +1,16 @@
 name: Lint
 on:
   pull_request:
-    branches: [ master ]
+    branches:
+    - master
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: ${{ github.event.pull_request.head.sha }}
+        fetch-depth: 0
     - name: Install modules
       run: npm install

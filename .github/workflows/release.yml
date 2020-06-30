@@ -1,0 +1,24 @@
+name: Release
+  on:
+    push:
+      branches:
+        - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v2
+        registry-url: https://npm.pkg.github.com/
+          node-version: 12.x
+          scope: "@hear"
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+      - name: bump version
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: |
+          npm 

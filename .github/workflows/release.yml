@@ -21,4 +21,4 @@ jobs:
           token: ${{ secrets.GIT_HUB_TOKEN }} # stored in GitHub secrets
           path: action.yml
       - name: Run My Action
-        uses: Audibene-GMBH/ta.bump-version-action@master
+        uses: Audibene-GMBH/ta.bump-version-action@v7.1.3

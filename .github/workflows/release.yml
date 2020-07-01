@@ -1,6 +1,12 @@
+
+name: Bumping version
+on:
+  push:
+    branches:
+    - master
 jobs:
-  awesome:
-    name: Awesome Action
+  bump:
+    name: Bumping version
     runs-on: ubuntu-latest
     steps:
       # checkout this repo

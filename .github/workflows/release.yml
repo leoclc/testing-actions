@@ -10,9 +10,7 @@ jobs:
     - uses: actions/checkout@master
       with:
         fetch-depth: '0'
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.17.2
+    - name: Automated Version Bump
+      uses: phips28/gh-action-bump-version@v7.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
-        INITIAL_VERSION: 1.0.0

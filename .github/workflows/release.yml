@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 12
       - name: "Automated Version Bump"
-        uses: "Audibene-GMBH/ta.bump-version-action@master"
+        uses: "Audibene-GMBH/ta.bump-version-action"
         with:
           tag-prefix: ''
         env:

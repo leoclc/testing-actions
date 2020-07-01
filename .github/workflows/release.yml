@@ -19,6 +19,6 @@ jobs:
           repository: Audibene-GMBH/ta.bump-version-action
           ref: master
           token: ${{ secrets.GIT_HUB_TOKEN }} # stored in GitHub secrets
-          path: push.yml
+          path: action.yml
       - name: Run My Action
         uses: Audibene-GMBH/ta.bump-version-action@master

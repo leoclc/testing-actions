@@ -1,6 +1,6 @@
 {
   "name": "ta.testing-stuff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "~~Your mama's future service~~ Skeletor is a blueprint service which should be used for your future services.",
   "main": "index.js",
   "scripts": {
@@ -28,5 +28,7 @@
     "eslint-plugin-import": "^2.22.0",
     "typescript": "^3.9.5"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

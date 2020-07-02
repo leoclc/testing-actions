@@ -29,8 +29,7 @@ jobs:
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v1
         with:
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@leoclc'
+          registry-url: 'https://npm.pkg.github.com/leoclc'
       # Publish to GitHub Packages
       - run: npm publish
         env:

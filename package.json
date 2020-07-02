@@ -1,5 +1,5 @@
 {
-  "name": "ta.testing-stuff",
+  "name": "testing-actions",
   "version": "1.0.4",
   "description": "~~Your mama's future service~~ Skeletor is a blueprint service which should be used for your future services.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Audibene-GMBH/ta.testing-stuff.git"
+    "url": "git+https://github.com/leoclc/testing-actions.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Audibene-GMBH/ta.testing-stuff/issues"
+    "url": "https://github.com/leoclc/testing-actions/issues"
   },
-  "homepage": "https://github.com/Audibene-GMBH/ta.testing-stuff#readme",
+  "homepage": "https://github.com/leoclc/testing-actions#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "eslint-plugin-typescript": "^0.14.0"

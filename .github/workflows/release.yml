@@ -3,12 +3,10 @@ on:
   push:
     branches:
       - "master"
-
 jobs:
-  bump-and-release:
-    name: "Bump Version + Release"
+  bump:
+    name: "Bump Version"
     runs-on: ubuntu-latest
-
     steps:
       - name: "Checkout source code"
         uses: "actions/checkout@v2"
@@ -26,6 +24,10 @@ jobs:
           tag-prefix: ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    publish:
+      name: "Publish"
+      runs-on: ubuntu-latest
+      steps:
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v1
         with:

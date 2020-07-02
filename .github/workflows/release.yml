@@ -24,15 +24,16 @@ jobs:
           tag-prefix: ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    publish:
-      name: "Publish"
-      runs-on: ubuntu-latest
-      steps:
-      # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v1
+  publish:
+    name: "Publish"
+    runs-on: ubuntu-latest
+    steps:
+    # Setup .npmrc file to publish to GitHub Packages
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v1
         with:
           registry-url: 'https://npm.pkg.github.com/leoclc'
       # Publish to GitHub Packages
-      - run: npm publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

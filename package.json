@@ -1,6 +1,6 @@
 {
   "name": "testing-actions",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "~~Your mama's future service~~ Skeletor is a blueprint service which should be used for your future services.",
   "main": "index.js",
   "scripts": {

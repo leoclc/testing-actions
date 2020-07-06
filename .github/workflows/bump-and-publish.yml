@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 14
       - name: "Automated Version Bump"
-      - run: npx standard-version && git push --follow-tags origin master
+        run: npx standard-version && git push --follow-tags origin master
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Setup .npmrc file to publish to GitHub Packages

@@ -1,11 +1,11 @@
 {
   "name": "@leoclc/testing-actions",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "~~Your mama's future service~~ Skeletor is a blueprint service which should be used for your future services.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit" : "git-cz"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
